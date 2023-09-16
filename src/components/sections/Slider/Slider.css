@@ -1,0 +1,81 @@
+.slid{
+    color: var(--color-light);
+    height: 100vh;
+}
+.slid_img {
+    background: url(../../../assets/imags/slid_img.jpg) no-repeat center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+p.slid_type span {
+    color: var(--color-primary);
+}
+
+p.slid_type {
+    font-weight: 700;
+    color: var(--color-light-dark);
+}
+
+h2.slid_title {
+    font-size: 100px;
+    margin-top: -10px;
+}
+
+p.slid_description {
+    font-size: 21px;
+    max-width: 57%;
+    margin: auto;
+    padding: 14px 0px;
+    padding-bottom: 35px;
+    color: var(--color-light-dark);
+}
+
+button.slid_btn {
+    padding: 20px 40px;
+    font-size: 18px;
+    background: none;
+    color: var(--color-light);
+    border: 1px solid var(--color-primary);
+    transition: .5s;
+    cursor: pointer;
+}
+
+button.slid_btn:hover {
+    color: var(--color-primary);
+    transition: .5s;
+}
+
+.address {
+    position: absolute;
+    left: -30px;
+    transform: rotateZ(-90deg);
+    font-size: 15px;
+    top: 50%;
+}
+
+.social_media {
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.social_media span {
+    padding: 0 27px;
+}
+
+.social_media span a {
+    color: var(--color-light);
+    transition: color .5s;
+}
+
+.social_media span a:hover {
+    color: var(--color-primary);
+}

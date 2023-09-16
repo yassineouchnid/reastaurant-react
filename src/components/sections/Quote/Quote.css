@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Tajawal:wght@400;500;700;800&display=swap');
+
+.Quote {
+    background: var(--color-primary);
+    color: var(--color-light);
+    padding: 67px 0;
+}
+
+.quf {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.quf .quote_title {
+    font-size: 96px;
+}
+
+.quote_title span {
+    font-family: 'Moon Dance', cursive;
+}
+
+.quote_title p {
+    font-size: 174px;
+    margin-top: -82px;
+}
+
+h3.quote_des {
+    margin: auto 0;
+    font-size: 37px;
+    max-width: 30%;
+}

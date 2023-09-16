@@ -1,0 +1,24 @@
+.locationRestaurant iframe{
+    border: 0;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 52px 0;
+}
+
+.infoRestaurant {
+    margin: auto 0;
+}
+
+.infoRestaurant p {
+    margin-bottom: 25px;
+    transition: .5s;
+}
+
+.infoRestaurant p:hover {
+    color: var(--color-primary);
+    font-weight: 500;
+    transition: .5s;
+}

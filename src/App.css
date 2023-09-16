@@ -1,38 +1,301 @@
-.App {
-  text-align: center;
+*, html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tajawal', sans-serif;
+}
+body{
+    max-width: 1920px;
+    margin: auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+    text-decoration: none;
+    color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root{
+    --color-light: white;
+    --color-light-dark:#cdcdcd; 
+    --color-dark: black;
+    --color-primary: #f5a637; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container{
+    width: 90%;
+    max-width: 1995px;
+    margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media(min-width:1025px) and (max-width:1280px){
+    .title_res {
+        font-size: 40px !important;
+    }
+    p.slid_type {
+        font-size: 15px !important;
+    }
+    h2.slid_title {
+        font-size: 80px !important;
+    }
+    p.slid_description {
+        font-size: 15px !important; 
+    }
+    .address,
+    .header ul li a {
+        font-size: 14px !important;
+    }
+}
+@media(min-width:768px) and (max-width:1024px){
+    h2.slid_title {
+        font-size: 66px !important;
+    }
+    p.slid_description {
+        font-size: 14px !important;
+    }
+    .header ul li a {
+        font-size: 11px !important;
+    }
+    .title_res {
+        font-size: 29px !important;
+    }
+    .feature_quote p {
+        font-size: 10px !important;
+    }
+    .Breakfast,
+    .quf,
+    .contact {
+        display: block !important;
+    }
+    h3.quote_des {
+        max-width: 100%;
+    }
+    .foodImg {
+        width: 100% !important;
+        margin: auto !important;
+    }
+    .price_rate {
+        width: auto !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        padding: 14px 0 !important;
+    }
+    .contact {
+        text-align: center !important;
+    }
+}
+@media (min-width:481px) and (max-width:767px){
+    .menu_ti .menuicne,
+    .header li,
+    .Breakfast,
+    .quf,
+    .contact{
+        display: block !important;
+    }
+    .header ul {
+        margin: 93px auto !important;
+        background: black !important;
+        padding: 56px 40px !important;
+    }
+    .mobacve{
+        display: block !important;
+    }
+    .spacve{
+        display: none !important;
+    }
+    .activeMenu{
+        display: block !important;
+        position: absolute;
+        width: 100%;
+        top: 0;
+    }
+    .deactiveMenu{
+        display: none !important;
+    }
+    .bg_wt .header ul li a {
+        color: var(--color-light) !important;
+    }
+    .header li {
+        padding-bottom: 30px !important;
+    }
+    h2.slid_title {
+        margin-top: -3px !important;
+        font-size: 44px !important;
+    }
+    p.slid_description {
+        font-size: 12px !important;
+    }
+    h3.quote_des {
+        max-width: 100% !important;
+    }
+    .header ul li a {
+        font-size: 11px !important;
+    }
+    .title_res {
+        font-size: 29px !important;
+    }
+    .feature_quote p {
+        font-size: 10px !important;
+    }
+    .foodImg {
+        width: 100% !important;
+        margin: auto !important;
+    }
+    .price_rate {
+        width: auto !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        padding: 14px 0 !important;
+    }
+    .contact {
+        text-align: center !important;
+    }
+    .slider-show{
+        width: 90% !important;
+        margin: 28px auto !important;
+    }
+    section.features {
+        display: grid !important;
+        grid-template-columns: auto auto !important;
+        grid-gap: 60px !important;
+    }
+    .foodProducts {
+        grid-template-columns: auto !important;
+        grid-gap: 10px !important;
+    }
+    .bld span {
+        padding: 7px 17px !important;
+    }
+    .list_link {
+        display: block !important;
+        text-align: center !important;
+    }
+    .list_link ul{
+        border-bottom: 1px solid var(--color-light) !important;
+    }
+    .social_app {
+        display: block !important;
+        text-align: center !important;
+    }
+    .social.icn {
+        padding-bottom: 21px;
+    }
+    .locationRestaurant iframe {
+        width: 100% !important;
+    }
+}
+@media (max-width:480px){
+    .menu_ti .menuicne,
+    .header li,
+    .Breakfast,
+    .quf,
+    .contact{
+        display: block !important;
+    }
+    .header ul {
+        margin: 93px auto !important;
+        background: black !important;
+        padding: 56px 40px !important;
+    }
+    .mobacve{
+        display: flex !important;
+    }
+    .spacve{
+        display: none !important;
+    }
+    .activeMenu{
+        display: block !important;
+        position: absolute;
+        width: 100%;
+        top: 0;
+    }
+    .deactiveMenu{
+        display: none !important;
+    }
+    .bg_wt .header ul li a {
+        color: var(--color-light) !important;
+    }
+    .header li {
+        padding-bottom: 30px !important;
+    }
+    h2.slid_title {
+        margin-top: -3px !important;
+        font-size: 33px !important;
+    }
+    .social_media span {
+        padding: 0 17px  !important;
+    }
+    .address {
+        left: -30px  !important;
+        font-size: 11px  !important;
+    }
+    p.slid_description {
+        font-size: 12px !important;
+    }
+    h3.quote_des {
+        max-width: 100% !important;
+    }
+    .header ul li a {
+        font-size: 11px !important;
+    }
+    .title_res {
+        font-size: 29px !important;
+    }
+    .feature_quote p {
+        font-size: 10px !important;
+    }
+    .bld span {
+        font-size: 16px  !important;
+    }
+    .foodImg {
+        width: 100% !important;
+        margin: auto !important;
+    }
+    .price_rate {
+        width: auto !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        padding: 14px 0 !important;
+    }
+    .contact {
+        text-align: center !important;
+    }
+    .slider-show{
+        width: 90% !important;
+        margin: 28px auto !important;
+    }
+    section.features {
+        display: grid !important;
+        grid-template-columns: auto auto !important;
+        grid-gap: 60px !important;
+    }
+    .foodProducts {
+        grid-template-columns: auto !important;
+        grid-gap: 10px !important;
+    }
+    .bld span {
+        padding: 7px 17px !important;
+    }
+    .list_link {
+        display: block !important;
+        text-align: center !important;
+    }
+    .list_link ul{
+        border-bottom: 1px solid var(--color-light) !important;
+    }
+    .social_app {
+        display: block !important;
+        text-align: center !important;
+    }
+    .social.icn {
+        padding-bottom: 21px;
+    }
+    .locationRestaurant iframe {
+        width: 100% !important;
+    }
+    .quote_title p {
+        font-size: 125px !important;
+        margin-top: -79px !important;
+    }
 }

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Tajawal:wght@400;500;700;800&display=swap');
+
+.feature_img img {
+    width: 66%;
+    position: relative;
+}
+
+section.features {
+    display: flex;
+    padding-top: 80px;
+    position: relative;
+}
+
+.features.container {
+    width: 90%;
+    margin: auto;
+}
+
+.feature_quote {
+    position: relative;
+    width: 60%;
+    margin-top: 100px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.feature_quote p{
+    position: relative;
+}
+
+.feature_quote p::before {
+    content: '';
+    background-color: var(--color-primary);
+    width: 43px;
+    height: 9px;
+    position: absolute;
+    top: -12px;
+    border-top-right-radius: 19px;
+}
+
+.feature_img {
+    width: 100%;
+    position: relative;
+}
+
+.feature_img span {
+    content: "";
+    width: 66%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid var(--color-light-dark);
+    bottom: -47px;
+    right: 104px;
+    z-index: -1;
+}
+
+.feature_detail {
+    position: relative;
+    margin: auto;
+    width: 82%;
+}
+
+.feature_detail h4 {
+    font-size: 41px;
+    font-family: 'Moon Dance', cursive;
+    padding-bottom: 15px;
+}
+
+.feature_detail h4::before {
+    content: '';
+    background-color: var(--color-primary);
+    width: 43px;
+    height: 9px;
+    position: absolute;
+    top: -12px;
+    border-top-right-radius: 19px;
+}
+
+.individual{
+    display: flex;
+    align-items: flex-end;
+}

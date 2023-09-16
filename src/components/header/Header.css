@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Tajawal:wght@400;500;700;800&display=swap');
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px 0;
+    color: var(--color-light);
+    position: relative;
+    z-index: 100;
+}
+
+header {
+    position: fixed;
+    z-index: 100;
+    margin: 0 auto;
+    width: 90%;
+    left: 0;
+    right: 0;
+}
+
+.mobacve{
+    display: none;
+}
+
+.menu_ti {
+    text-align: center;
+    position: relative;
+}
+
+.menu_ti span {
+    font-size: 36px;
+    display: none;
+}
+
+.bg_wt{
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all .5s;
+}
+
+.bg_wt .header ul li a,
+.bg_wt .header h1,
+.bg_wt span{
+    color: var(--color-dark);
+}
+
+.header ul {
+    display: flex;
+    margin: auto;
+}
+
+.header li {
+    display: block;
+}
+
+.header ul li a {
+    padding: 17px;
+    text-decoration: none;
+    color: var(--color-light);
+    font-size: 17px;
+    font-weight: 500;
+    transition: color .5s;
+}
+
+.header ul li a:hover {
+    color: var(--color-primary);
+}
+
+.title_res{
+    font-family: 'Moon Dance', cursive;
+    cursor: pointer;
+    font-size: 50px;
+}

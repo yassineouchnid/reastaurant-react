@@ -1,0 +1,96 @@
+.bld {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.bld span {
+    position: relative;
+    padding: 7px 51px;
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: 700;
+    transition: .5s;
+}
+
+.active{
+    color: var(--color-primary);
+    transition: .5s;
+}
+
+.active::before{
+    content: "";
+    position: absolute;
+    background-color: var(--color-primary);
+    width: 35%;
+    height: 4px;
+    border-radius: 5px;
+    bottom: 7px;
+    transition: .5s;
+}
+
+.foodImg img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.Breakfast {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: box-shadow .5s;
+    padding: 33px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.Breakfast:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.foodImg {
+    width: 50%;
+    margin: auto 20px;
+}
+
+.title_description {
+    margin: auto 0;
+}
+
+.title_description h1 {
+    font-size: 25px;
+    transition: color .5s;
+}
+
+.price_rate {
+    margin: auto 19px;
+    width: 15%;
+    font-weight: 500;
+    transition: color .5s;
+}
+
+.foodProducts{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 60px;
+}
+
+.Breakfast:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.Breakfast:hover .price_rate,
+.Breakfast:hover .title_description h1{
+    color: var(--color-primary);
+}
+
+.showProducts{
+    display: grid;
+}
+
+.noShowProducts{
+    display: none;
+}
+
+.ingBold{
+    font-weight: bold;
+}

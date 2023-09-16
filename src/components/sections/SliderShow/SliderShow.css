@@ -1,0 +1,16 @@
+.slick-slide img {
+    display: block;
+    width: 100%;
+    max-height: 806px;
+}
+
+.slider-show {
+    position: relative;
+    margin-top: 91px;
+    cursor: grab;
+}
+
+.slick-dots{
+    display: none !important;
+}
+
